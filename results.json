@@ -1,0 +1,56 @@
+{
+  "settings": {
+    "candidates": 2000,
+    "listings": 300,
+    "seed": 42,
+    "k": 3,
+    "ok_threshold": 0.7
+  },
+  "methods": {
+    "matching": {
+      "mean_top_k_satisfaction": 0.855,
+      "top1_ok_rate": 0.997
+    },
+    "noise_filter": {
+      "mean_top_k_satisfaction": 0.63,
+      "top1_ok_rate": 0.344
+    },
+    "random": {
+      "mean_top_k_satisfaction": 0.549,
+      "top1_ok_rate": 0.175
+    }
+  },
+  "groups": {
+    "quiet_structured": {
+      "n": 599,
+      "mean_top_k_satisfaction": 0.815,
+      "top1_ok_rate": 0.992,
+      "no_clean_match_rate": 0.0
+    },
+    "balanced": {
+      "n": 471,
+      "mean_top_k_satisfaction": 0.933,
+      "top1_ok_rate": 1.0,
+      "no_clean_match_rate": 0.0
+    },
+    "quiet_flexible": {
+      "n": 413,
+      "mean_top_k_satisfaction": 0.823,
+      "top1_ok_rate": 0.995,
+      "no_clean_match_rate": 0.0
+    },
+    "social_flexible": {
+      "n": 309,
+      "mean_top_k_satisfaction": 0.858,
+      "top1_ok_rate": 1.0,
+      "no_clean_match_rate": 0.0
+    },
+    "rare_mixed": {
+      "n": 208,
+      "mean_top_k_satisfaction": 0.853,
+      "top1_ok_rate": 1.0,
+      "no_clean_match_rate": 0.0
+    }
+  },
+  "group_gap": 0.118
+}
